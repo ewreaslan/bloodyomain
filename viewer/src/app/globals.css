@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@layer base {
+  * { @apply border-border; }
+  html { @apply text-[15px] antialiased; }
+  body {
+    @apply bg-bg text-text-primary font-sans min-h-screen;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0,180,216,0.03), transparent),
+      radial-gradient(ellipse 60% 40% at 80% 80%, rgba(139,92,246,0.02), transparent);
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-bg-card/70 backdrop-blur-xl border border-white/[0.04] shadow-lg;
+  }
+  .glass-hover {
+    @apply hover:border-white/[0.08] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200;
+  }
+  .glass-card {
+    @apply glass rounded-xl p-4;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.05); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(0,180,216,0.3); }
+
+/* D3 Graph styles */
+.node circle { stroke-width: 2; cursor: pointer; filter: drop-shadow(0 0 3px rgba(0,0,0,0.7)); }
+.node text { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; fill: #e8edf5; pointer-events: none; text-anchor: middle; paint-order: stroke; stroke: #06080c; stroke-width: 3px; }
+.link { stroke-opacity: 0.3; stroke-width: 1.2; fill: none; }
+.link.hl { stroke-opacity: 0.8; stroke-width: 2.2; }
+@keyframes pulse { 0%,100% { filter: drop-shadow(0 0 3px currentColor); } 50% { filter: drop-shadow(0 0 14px currentColor); } }
+.node.crit circle { animation: pulse 2s ease-in-out infinite; }

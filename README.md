@@ -13,7 +13,7 @@
 
 **Bloodyomain**, Active Directory ortamlarının kapsamlı güvenlik denetimi için geliştirilmiş, saldırı yolu görselleştirme odaklı bir araçtır. LDAP ve SMB protokolleri üzerinden etki alanını derinlemesine tarar, 25'ten fazla saldırı zincirini otomatik olarak analiz eder ve etkileşimli bir HTML raporu sunar.
 
-Pentester'lar, red team operatörleri ve AD güvenlik denetçileri için tasarlanmıştır.
+Pentester'lar, Red Team Operatörleri ve AD Güvenlik Denetçileri için tasarlanmıştır.
 
 ### Özellikler
 

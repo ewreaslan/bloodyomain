@@ -1,4 +1,4 @@
-# 🩸 Active Directory Enumeration & Attack Path Visualization
+# 🩸 AD Enumeration & Attack Path Visualization
 
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python 3.8+">
